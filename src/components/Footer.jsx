@@ -1,15 +1,32 @@
-import React from "react";
-import "@/styles/common.css";
+import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({currentPage}) => {
   return (
     <footer className="footer">
-      <div className="footer-logo">
-        <img src="/images/common/logo-footer.png" alt="Kissa footer" />
-      </div>
-      <div className="footer-tel">TEL: 03-1234-5678</div>
-      <div className="footer-time">営業時間: 9:00 - 18:00</div>
-      <div className="copyright">&copy; KISSA COFFEE</div>
+      <nav className="site-menu">
+      <ul>
+              <li className={currentPage === "concept" ? "is-current" : ""}>
+                <Link href="/concept">CONCEPT</Link>
+              </li>
+              <li className={currentPage === "menu" ? "is-current" : ""}>
+                <Link href="/menu">MENU</Link>
+              </li>
+              <li className={currentPage === "shop" ? "is-current" : ""}>
+                <Link href="/shop">SHOP</Link>
+              </li>
+              <li className={currentPage === "access" ? "is-current" : ""}>
+                <Link href="/access">ACCESS</Link>
+              </li>
+            </ul>
+      </nav>
+      <a className="footer-logo" href="/">
+        <img src="/images/common/logo-footer.png" alt="KISSA" />
+      </a>
+      <p className="footer-tel">TEL 01-2345-6789</p>
+      <p className="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+      <p className="copyright">
+        <small>&copy;Kissa</small>
+      </p>
     </footer>
   );
 };

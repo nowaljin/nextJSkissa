@@ -1,24 +1,38 @@
-import React from "react";
-import "@/styles/index.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
     <>
-      <section className="first-view">
-        <div className="first-view-text">
-          <h1>Imagination</h1>
-          <p>コーヒーを待つ時間も、特別なひとときとなる。</p>
-          <div className="link-button-area">
-            <a className="link-button" href="/concept">詳しく見る</a>
+      <Header />
+      <main className="main">
+        <div className="first-view">
+          <div className="first-view-text">
+            <h1>
+              Imagination <br />
+              take you everywhere.
+            </h1>
+            <p>コーヒーを待つ時間も、特別なひとときとなる。</p>
           </div>
         </div>
-      </section>
-
-      <section className="lead">
         <div className="lead">
-          <p>こちらはトップページのサンプルです。スタイルは `index.css` を使用しています。</p>
+          <p>
+            「想像力はあなたをどこにでも連れて行ってくれる」
+            <br />
+            注文を待つ間に広げた、一冊の本の 中に見つけたことば。
+            <br />
+            ゆったり流れる時間の中で、想像をふくらませる楽しさを思い出す。
+            <br />
+            そんな時間を過ごすとき、おいしいコーヒーがあるとうれしい。
+          </p>
+          <div className="link-button-area">
+            <a className="link-button" href="./concept.html">
+              CONCEPT
+            </a>
+          </div>
         </div>
-      </section>
+      </main>
+      <Footer />
     </>
   );
 };

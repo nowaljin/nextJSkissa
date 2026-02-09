@@ -1,13 +1,13 @@
-import React from "react";
-import "@/styles/common.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Shop = () => {
   return (
-    <main className="content">
-      <h2 className="section-title">ショップ</h2>
-      <p>グッズや商品情報を掲載します。</p>
-    </main>
+    <>
+      <Header currentPage="shop" />
+      <p>ショップ</p>
+      <Footer currentPage="shop" />
+    </>
   );
 };
-
 export default Shop;

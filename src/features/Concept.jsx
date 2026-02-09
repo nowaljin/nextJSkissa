@@ -1,13 +1,13 @@
-import React from "react";
-import "@/styles/common.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Concept = () => {
   return (
-    <main className="content">
-      <h2 className="section-title">コンセプト</h2>
-      <p>ここにコンセプトの説明が入ります。</p>
-    </main>
+    <>
+      <Header currentPage="concept" />
+      <p>コンセプト</p>
+      <Footer currentPage="concept" />
+    </>
   );
 };
-
 export default Concept;

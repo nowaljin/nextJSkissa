@@ -25,21 +25,19 @@
   margin-top: 15px;
 }
 
-.access-content .section-title {
+.main h2 {
   font-size: 22px;
   font-weight: bold;
   line-height: 30px;
-  position: relative;
-  padding-bottom: 12px;
 }
 
-.access-content .section-title::after {
+.main h2::after {
   content: '';
   display: block;
   width: 36px;
   height: 3px;
   background-color: #000000;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .map {

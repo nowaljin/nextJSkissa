@@ -60,8 +60,13 @@ img {
   margin-right: 20px;
 }
 
+.site-menu ul li.is-current {
+  color: orangered;
+}
+
 .site-menu ul li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: bold;
 }
 
@@ -98,99 +103,7 @@ img {
   margin-top: 90px;
 }
 
-.title {
-  color: blue;
-  font-size: 40px;
-  font-family: var(--font-montserrat), sans-serif;
-  font-weight: bold;
-}
-
-:root {
-    --font-montserrat: 'Montserrat', sans-serif;
-}
-
-/* Header */
-.site-header {
-  background-color: #f2f2f2;
-  border-bottom: 1px solid #e0e0e0;
-}
-.header-inner {
-  max-width: 1200px;
-  height: 110px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo-link {
-  font-family: var(--font-montserrat), sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: #111;
-  text-decoration: none;
-}
-.main-nav ul {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-}
-.main-nav a {
-  color: #333;
-  letter-spacing: 0.06em;
-  font-weight: 600;
-}
-
-/* Hero */
-.hero-access {
-  background-image: url('/images/index/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 60px 0 80px;
-}
-.hero-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-}
-.hero-title {
-  font-size: 48px;
-  margin: 0;
-  letter-spacing: 0.18em;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
-.hero-sub {
-  margin-top: 8px;
-  color: rgba(255,255,255,0.85);
-}
-
-/* Content */
-.content {
-  max-width: 1000px;
-  margin: 40px auto 80px;
-  padding: 0 20px;
-}
-.section-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-.map-wrap {
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  padding: 8px;
-}
-
 @media (max-width: 768px) {
-  .hero-title { font-size: 32px; }
-  .header-inner { padding-left: 20px; padding-right: 20px; }
-}
-
-@media (max-width: 768px) {
-
   .site-menu ul {
     display: block;
     text-align: center;
@@ -228,7 +141,7 @@ img {
     left: 0;
     right: 0;
     color: #ffffff;
-    background-color: #736E62;
+    background-color: #736e62;
     padding-top: 30px;
     padding-bottom: 50px;
     display: none;
