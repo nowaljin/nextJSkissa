@@ -43,15 +43,16 @@ const Menu = () => {
           <ul className="item-list">
             {items.map((item) => (
               <li key={item.id}>
-                <img
-                  src={`/images/menu/${item.image}`}
-                  alt={`${item.name_jp}の商品画像`}
-                />
+                  <img
+                    src={`/images/menu/${item.image}`}
+                    alt={`${item.name_jp}の商品画像`}
+                    loading="lazy"
+                  />
                 <dl>
                   <dt>{item.name_jp}</dt>
                   <dd>{item.description_jp}</dd>
                 </dl>
-                <p className="price">¥{item.price}</p>
+                <p className="price">¥{new Intl.NumberFormat('ja-JP').format(item.price)}</p>
                 <p className="item-label">{item.label_en}</p>
               </li>
             ))}
