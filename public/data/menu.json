@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name_jp": "アメリカーノ",
+    "description_jp": "浅煎りの豆をこだわりの配合でブレンドした、スッキリと爽やかな飲み口。ホットでもアイスでもおすすめです。",
+    "price": 420,
+    "label_en": "AMERICANO",
+    "image": "img-item01.jpg"
+  },
+  {
+    "id": 2,
+    "name_jp": "カフェラテ",
+    "description_jp": "ミルクをたっぷり使ったまろやかな一杯。苦味と甘さのバランスが良い定番メニュー。",
+    "price": 480,
+    "label_en": "LATTE",
+    "image": "img-item02.jpg"
+  },
+  {
+    "id": 3,
+    "name_jp": "カプチーノ",
+    "description_jp": "ふんわりとしたミルクフォームが特徴の、香り高いエスプレッソベースのドリンク。",
+    "price": 500,
+    "label_en": "CAPPUCCINO",
+    "image": "img-item03.jpg"
+  },
+  {
+    "id": 4,
+    "name_jp": "モカ",
+    "description_jp": "チョコレートの甘さがアクセントのリッチなドリンク。デザート感覚でどうぞ。",
+    "price": 520,
+    "label_en": "MOCHA",
+    "image": "img-item04.jpg"
+  },
+  {
+    "id": 5,
+    "name_jp": "エスプレッソ",
+    "description_jp": "濃厚な香りと深いコクが楽しめる、当店自慢の一杯。ショットでどうぞ。",
+    "price": 320,
+    "label_en": "ESPRESSO",
+    "image": "img-item05.jpg"
+  },
+  {
+    "id": 6,
+    "name_jp": "アイスコーヒー",
+    "description_jp": "すっきりとした後味のアイスコーヒー。暑い日にもおすすめの爽やかさ。",
+    "price": 430,
+    "label_en": "ICED COFFEE",
+    "image": "img-item06.jpg"
+  }
+]
